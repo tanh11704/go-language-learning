@@ -12,3 +12,8 @@ func TestGetMessage(t *testing.T) {
 		t.Errorf("GetMessage() = %q, want %q", got, expected)
 	}
 }
+
+func TestMainExecution(t *testing.T) {
+	// Gọi hàm main()
+	main()
+}
