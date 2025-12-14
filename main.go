@@ -6,7 +6,11 @@ import (
 	"rsc.io/quote"
 )
 
+func GetMessage() string {
+	return quote.Go()
+}
+
 func main() {
 	fmt.Println("Hello, Golang Internship 2025!")
-	fmt.Println(quote.Go()) // Sử dụng hàm từ thư viện ngoài
+	fmt.Println(GetMessage())
 }

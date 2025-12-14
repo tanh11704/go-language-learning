@@ -6,9 +6,9 @@ import (
 	"rsc.io/quote"
 )
 
-func TestHello(t *testing.T) {
-	expected := "Don't communicate by sharing memory, share memory by communicating."
-	if got := quote.Go(); got != expected {
-		t.Errorf("quote.Go() = %q, want %q", got, expected)
+func TestGetMessage(t *testing.T) {
+	expected := quote.Go()
+	if got := GetMessage(); got != expected {
+		t.Errorf("GetMessage() = %q, want %q", got, expected)
 	}
 }
